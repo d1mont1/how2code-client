@@ -54,22 +54,18 @@ const SideBarProfile: FC<Props> = ({ user, active, avatar, setActive, logOutHand
                     Зарегистрированные курсы
                 </h5>
             </div>
-            {user.role === 'admin' ||
-                (user.role === 'mentor' && (
-                    <Link
-                        className={`w-full flex items-center px-3 py-4 cursor-pointer ${
-                            active === 6 ? 'dark:bg-slate-800 bg-white' : 'bg-transparent'
-                        }`}
-                        href={'/admin'}>
-                        <MdOutlineAdminPanelSettings
-                            size={20}
-                            className="dark:text-white text-black"
-                        />
-                        <h5 className="pl-2 800px:block hidden font-Poppins dark:text-white text-black">
-                            Панель администратора
-                        </h5>
-                    </Link>
-                ))}
+            {(user.role === 'admin' || user.role === 'mentor') && (
+                <Link
+                    className={`w-full flex items-center px-3 py-4 cursor-pointer ${
+                        active === 6 ? 'dark:bg-slate-800 bg-white' : 'bg-transparent'
+                    }`}
+                    href={'/admin'}>
+                    <MdOutlineAdminPanelSettings size={20} className="dark:text-white text-black" />
+                    <h5 className="pl-2 800px:block hidden font-Poppins dark:text-white text-black">
+                        Панель администратора
+                    </h5>
+                </Link>
+            )}
             <div
                 className={`w-full flex items-center px-3 py-4 cursor-pointer ${
                     active === 4 ? 'dark:bg-slate-800 bg-white' : 'bg-transparent'
