@@ -1,13 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    images: {
-        domains: [
-            'edmy-react.hibootstrap.com',
-            'res.cloudinary.com',
-            'randomuser.me',
-            'avatars.githubusercontent.com',
-        ],
-    },
+    remotePatterns: [
+        {
+            protocol: 'https',
+            hostname: '**',
+        },
+    ],
     experimental: {
         reactRoot: true,
         suppressHydrationWarning: true,
