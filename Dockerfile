@@ -23,7 +23,7 @@ RUN npm run build
 # RUN yarn build
 
 # Этап 2: Запуск
-FROM node:16-alpine
+FROM node:18-alpine
 
 # Устанавливаем рабочую директорию
 WORKDIR /app
