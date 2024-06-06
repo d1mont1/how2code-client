@@ -23,10 +23,10 @@ const Page = (props: Props) => {
     const [category, setCategory] = useState('All');
 
     useEffect(() => {
-        if (category === 'Все') {
+        if (category === 'All') {
             setcourses(data?.courses);
         }
-        if (category !== 'Все') {
+        if (category !== 'All') {
             setcourses(data?.courses.filter((item: any) => item.categories === category));
         }
         if (search) {
