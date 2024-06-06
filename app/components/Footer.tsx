@@ -24,7 +24,7 @@ const Footer = (props: Props) => {
                                 <Link
                                     href="/privacy-policy"
                                     className="text-base text-black dark:text-gray-300 dark:hover:text-white">
-                                    Политика конфиденциальности
+                                    Политика
                                 </Link>
                             </li>
                             <li>
@@ -102,10 +102,6 @@ const Footer = (props: Props) => {
 
                         <p className="text-base text-black dark:text-gray-300 dark:hover:text-white pb-2">
                             Адрес: Улица Пушкина, 17.
-                        </p>
-
-                        <p className="text-base text-black dark:text-gray-300 dark:hover:text-white  pb-2">
-                            Напишите нам: hello@How2Code.com
                         </p>
                     </div>
                 </div>

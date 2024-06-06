@@ -14,7 +14,7 @@ const About = () => {
                             Что такое <span className="text-gradient">How2Code?</span>
                         </h1>
                         <br />
-                        <p className="text-lg font-medium">
+                        <p className="text-lg font-medium dark:text-white text-black">
                             “Готовы ли вы поднять свои навыки программирования на новый уровень? Не
                             ищите дальше, чем How2Code, ведущая программная сообщество, посвященное
                             помощи новым программистам в достижении их целей и раскрытии их полного
